@@ -972,7 +972,7 @@ static struct msg_msg *find_msg(struct msg_queue *msq, long *msgtyp, int mode)
 	}
 
 	return found ?: ERR_PTR(-EAGAIN);
-+}
+}
 
 #ifdef CONFIG_KRG_IPC
 long do_msgrcv(int msqid, void __user *buf, size_t bufsz, long msgtyp, int msgflg,
