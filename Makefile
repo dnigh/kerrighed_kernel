@@ -393,7 +393,7 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Werror-implicit-function-declaration \
 		   -Wno-format-security \
 		   -fno-delete-null-pointer-checks \
-		   -std=gnu89
+		   -std=gnu99
 
 ifneq ($(WITH_GCOV),1)
 ifeq ($(KBUILD_EXTMOD),)
