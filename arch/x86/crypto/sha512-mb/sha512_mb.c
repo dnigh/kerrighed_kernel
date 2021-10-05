@@ -116,7 +116,7 @@ inline void sha512_init_digest(uint64_t *digest)
 	memcpy(digest, initial_digest, sizeof(initial_digest));
 }
 
-inline uint32_t sha512_pad(uint8_t padblock[SHA512_BLOCK_SIZE * 2],
+static inline uint32_t sha512_pad(uint8_t padblock[SHA512_BLOCK_SIZE * 2],
 			 uint32_t total_len)
 {
 	uint32_t i = total_len & (SHA512_BLOCK_SIZE - 1);
